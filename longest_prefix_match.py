@@ -12,8 +12,8 @@ ip_file = sys.argv[2]
 
 st = SubnetTree.SubnetTree()
 for prefix in open(prefix_file).readlines():
+	prefix = prefix.strip('\n')	
 	if prefix:
-		prefix = prefix.strip('\n')
 		st[prefix] = prefix
 for ip in open(ip_file).readlines():
 	st.set_binary_lookup_mode(False)
