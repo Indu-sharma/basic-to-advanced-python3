@@ -4,6 +4,7 @@ import dateparser
 
 
 class DateUtils:
+    '''takes various datestring formats and returns fixed YYYY.MM.dd datestrig'''
     def __init__(self, datestring, time_format="unix"):
         self.datestring = datestring
         self.time_format = time_format
