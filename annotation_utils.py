@@ -1,5 +1,4 @@
 from __future__ import print_function
-from ip_utils import IpUtils
 
 
 class Annotation (object):
@@ -42,21 +41,7 @@ class Annotation (object):
                     try:
                         try:
                             enriched_fields = ib_dict.get (record[d_col])[k]
-                        except TypeError:
-                            pass
-                        try:
-                            if record[d_col] not in local_cache and ':' in record[d_col]:
-                                matched_ip = IpUtils ().match_in_set (record[d_col], ib_dict.keys ())
-                                local_cache[record[d_col]] = matched_ip
-                            elif record[d_col] in local_cache:
-                                matched_ip = local_cache.get (record[d_col])
-                                enriched_fields = ib_dict.get (matched_ip)[k]
-                            else:
-                                pass
-                        except:
-                            pass
-                    except:
-                        pass
+
                     record[ib_col + '_' + d_col] = unicode (enriched_fields)
             result_list.append (record)
         return result_list
