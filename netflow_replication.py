@@ -30,7 +30,7 @@ conf.set ("spark.driver.maxResultSize", "2g")
 sc = SparkContext (conf=conf)
 sqlContext = HiveContext (sc)
 
-path = '/data/collector/saikat/2016/01/01/00/'
+path = '/data/collector/xyz/2016/01/01/00/'
 binInterval = 05
 startEpoch = 1481220000
 sourceEpoch = 1451606400
