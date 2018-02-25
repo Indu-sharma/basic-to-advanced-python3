@@ -222,3 +222,15 @@ class ElasticsearchUtils (object):
             all_fields = hit.to_dict ()
             response.append (all_fields)
         return response
+    @staticmethod
+    def es_update(key, value):
+        es_conn = elasticsearch.Elasticsearch ("192.168.112.52:9200")
+        mydict = { "script": { "inline": "ctx.ip=\""+key+"\"","lang": "painless"},
+                "query": { "term": { "abc": value} }
+            }
+        body=json.dumps(mydict)
+        print(body)
+        try:
+            es_conn.update_by_query('xyz',body=body)
+        except elasticsearch.exceptions.RequestError as e:
+            print (e)
