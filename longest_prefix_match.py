@@ -21,12 +21,22 @@ for prefix in open(prefix_file).readlines():
 	prefix = prefix.strip('\n')	
 	if prefix:
 		st[prefix] = prefix
-for ip in open(ip_file).readlines():
-	st.set_binary_lookup_mode(False)
-	ip = ip.strip('\n')
-	if ip:
-		if ip in st:
-			st.set_binary_lookup_mode(True)
-			print ip,':',st[socket.inet_aton(ip)]
-		else:
-			print ip,':','No matching prefix found'
+st.set_binary_lookup_mode(False)
+def pass_ipfile(ip_file):
+	for ip in open(ip_file).readlines():
+		st.set_binary_lookup_mode(False)
+		ip = ip.strip('\n')
+		if ip:
+			if ip in st:
+				st.set_binary_lookup_mode(True)
+				print ip,':',st[socket.inet_aton(ip)]
+			else:
+				print ip,':','No matching prefix found'
+def pass_ip(ip):
+	if ip in st:
+		st.set_binary_lookup_mode(True)
+		print ip,':',st[socket.inet_aton(ip)]
+	else:
+		print ip,':','No matching prefix found'
+
+pass_ipfile(ip_file)
