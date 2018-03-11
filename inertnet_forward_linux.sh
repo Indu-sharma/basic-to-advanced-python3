@@ -1,3 +1,5 @@
+## Refer to the link for details-> https://telecombigdata.blogspot.in/2018/03/how-to-share-internet-via-linux-box-to.html
+
 if [ $# -ne 3 ] ; then
 	echo "Usage : `basename $0` <private nework> <Internet facing interface name> <Private networking facing interface>"
         echo "Example: `basename $0` '10.2.0.0/16' eth1 eth0"
