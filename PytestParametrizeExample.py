@@ -1,6 +1,5 @@
 import math
 import pytest
-from operations_python_objects import Transform
 
 
 def square(in_put):
