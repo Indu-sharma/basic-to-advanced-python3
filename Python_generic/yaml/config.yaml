@@ -1,0 +1,15 @@
+AD_netWorkAdress:  &AD_ip "10.1.0.10"
+Proxy_cs_uri_path: &proxy_malacious_url "https://crypto_malacious.com/x/y/z.exe"
+proxy_ip: &proxy_ip "10.1.0.20"
+Fireeye_src: *AD_ip  #dst address as the Internet proxy server
+Fireeye_spt: &fe_srcPort 1245
+Fireeye_dst: *proxy_ip
+Proxy_client_ip: *AD_ip
+Firewall_source-address: *AD_ip
+Firewall_destination-address: *proxy_ip
+Firewall_destination-port: 8090
+Firewall_source-port: *fe_srcPort
+SourceFire_srcIp_srcPort: [*AD_ip, *fe_srcPort]
+AD_username: &username "indu.sharma"
+Sophos_email: [*username, "@guavus.com"]
+Sophos_attachment: *proxy_malacious_url
