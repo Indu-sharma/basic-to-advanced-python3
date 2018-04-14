@@ -59,3 +59,7 @@ class LinkedList(object):
 
     def __sub__(self, other):
         return [a - b for a, b in zip(self, other)]
+    
+    def test_len(createlinklists):
+        a, b = createlinklists
+        assert len(a) == 5
