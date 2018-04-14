@@ -59,14 +59,4 @@ def test_len(createlinklists):
     a, b = createlinklists
     assert len(a) == 5
 
-''' Sample Results 
-test_DataModel_LinkList.py::test_iter PASSED                                                                                                                                              [ 12%]
-test_DataModel_LinkList.py::test_eq PASSED                                                                                                                                                [ 25%]
-test_DataModel_LinkList.py::test_str PASSED                                                                                                                                               [ 37%]
-test_DataModel_LinkList.py::test_repr PASSED                                                                                                                                              [ 50%]
-test_DataModel_LinkList.py::test_substraction PASSED                                                                                                                                      [ 62%]
-test_DataModel_LinkList.py::test_multiplication PASSED                                                                                                                                    [ 75%]
-test_DataModel_LinkList.py::test_addition PASSED                                                                                                                                          [ 87%]
-test_DataModel_LinkList.py::test_len PASSED  
-'''
     
