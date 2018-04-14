@@ -54,3 +54,7 @@ def test_multiplication(createlinklists):
 def test_addition(createlinklists):
     a, b = createlinklists
     assert a + b == [8, 6, 4, 2, 2]
+ 
+def test_len(createlinklists):
+    a, b = createlinklists
+    assert len(a) == 5
