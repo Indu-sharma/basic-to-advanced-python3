@@ -1,8 +1,8 @@
-from abc import ABCMeta, abstractmethod
-import abc
-print(dir(abc))
+from abc import ABC, abstractmethod
 
-class Animal(ABCMeta):
+class Animal(ABC):
+    ''' The methods marked as abstractmethod should be implemented in the child class
+    Otherwise, we get the notImplementedError derived from RunTimeError exception'''
     
     @abstractmethod
     def do_say(self):
