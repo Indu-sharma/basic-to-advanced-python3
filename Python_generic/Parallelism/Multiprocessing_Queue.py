@@ -20,6 +20,6 @@ if __name__ == '__main__':
     p.join()
     result = []
     while q.empty() is False:
-        result.append(q.get)
+        result.append(q.get())
 
     print("Area of the List {} is {} with pi value {}".format(redii, result, pi))
