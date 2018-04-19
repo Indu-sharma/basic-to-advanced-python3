@@ -4,8 +4,8 @@ child.expect ('Name .*: ')
 child.sendline ('root')
 child.expect ('Password:')
 child.sendline ('noah@example.com')
-child.expect ('ftp> ')
+child.expect ('root@telnet: ')
 child.sendline ('ls /tmp/files/')
-child.expect ('ftp> ')
+child.expect ('root@telnet: )
 print child.before # Read the results of the Output.    
 child.interact()       # Get the control back to User.
