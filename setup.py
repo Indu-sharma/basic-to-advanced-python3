@@ -17,7 +17,7 @@ setup(
     license = "BSD",
     keywords = "Python3  Algorithms Advance Classes Python-tricks",
     url = "http://packages.python.org/python3-learning-indu",
-    packages=['python3-learning-indu'],
+    packages=[''],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic ::Learning Python ",
