@@ -1,0 +1,41 @@
+from functools import wraps, partial, reduce, singledispatch
+
+"""
+Partial :: Fit in Partial arguments and later extend to other params.
+"""
+
+
+def test(a, b):
+    print(f'I got {a} and I got {b}')
+
+
+half_fun = partial(test, a=1)
+half_fun(b=2)
+
+""" 
+Single Dispatch :: Example Regardless of Integer or String the fprint function will 
+behave exactly same to user. 
+"""
+
+
+@singledispatch
+def fprint(s):
+    print('Hello: ' + s)
+
+
+@fprint.register(int)
+def _(s):
+    print('Hello: ' + str(s))
+
+
+@fprint.register(set)
+@fprint.register(tuple)
+@fprint.register(list)
+def _(s):
+    print('Hello: ' + ','.join(map(str, s)))
+
+
+fprint({1, 2, 3, 4, 5})
+fprint([1, 2, 3, 4, 5])
+fprint(10)
+fprint('Hello')
