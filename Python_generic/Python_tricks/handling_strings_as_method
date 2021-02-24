@@ -1,4 +1,8 @@
 def process_comands(in_put, my_list=[]):
+    """
+    This takes the List Method & method arguments as the input text string and execute it against the my_list.
+    Note - This doesn't handle the List operations such as sorted i.e keywords. 
+    """
     
     if in_put.strip('\n') != 'print':
         command = in_put.split()[0]
