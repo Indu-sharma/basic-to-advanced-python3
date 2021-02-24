@@ -1,0 +1,35 @@
+def process_comands(in_put, my_list=[]):
+    
+    if in_put.strip('\n') != 'print':
+        command = in_put.split()[0]
+        args = in_put.split()[1:]
+        args = tuple(map(lambda x : int(x), args))
+        obj = getattr(my_list, command) 
+        obj(*args)
+    else:
+        print(my_list)
+
+if __name__ == '__main__':
+    my_list = []
+    N = int(input())
+    for i in range(N):
+        process_comands(input())
+
+
+""" 
+Sample Input:
+12
+insert 0 10
+print
+insert 1 1
+insert 0 6
+remove 6
+append 9
+append 1
+sort
+print
+pop
+reverse
+print
+
+"""
