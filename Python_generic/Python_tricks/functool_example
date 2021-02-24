@@ -83,3 +83,15 @@ _list()
 _tupple()
 print(_list.__name__)
 print(_list.__doc__)   
+
+
+"""
+Use of reduce in aggregations such as sum, multiply etc.  
+Following example gives same result as : sum(my_list)
+"""
+
+my_list = [10,10,11,12,3000,9899]
+print(reduce(lambda x,y : x+y, my_list))
+
+
+
