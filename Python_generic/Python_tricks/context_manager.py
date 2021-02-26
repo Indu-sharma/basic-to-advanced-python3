@@ -9,6 +9,7 @@ with open(sys.argv[0]) as FH:
         lines_code = lines_code + 1
 print("Total Lines of codes : {}".format(lines_code))
 
+
 # The above is ideally equavalent:
 
 try:
@@ -22,6 +23,7 @@ finally:
 
 
 # The Custom Implementation of Open in file open would look like:
+
 
 class OpenFile:
     """My custom context manager"""
@@ -44,6 +46,7 @@ with OpenFile(sys.argv[0]) as FH:
 
 # However, we dont need to override enter, exit methods for custom context manager simulation. We can just use the
 # contextmanager lib.
+
 
 from contextlib import contextmanager
 
