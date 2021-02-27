@@ -1,5 +1,5 @@
 
-from collections import namedtuple, Counter, ChainMap, OrderDict, defaultdict  
+from collections import namedtuple, Counter, ChainMap, OrderDict, defaultdict , deque  
 import random
 
 """ 
@@ -105,4 +105,20 @@ x = defaultdict(list)
 for i in a:
     x[i].append(i)
 print(dict(x))
+
+
+"""
+In DeQue you can define the Max Length of the Deque(is like list) and along with pop & append, 
+DeQue has popleft and appendleft methods. 
+DeQue works like Linux Tail command by Truncating the iterable given to Deque with the use of maxlen argument.
+
+"""
+d = deque('abcde', 5)
+d.appendleft(1)
+print(list(d))  # [1, 'a', 'b', 'c', 'd']
+d.popleft()
+print(d)  # ['a', 'b', 'c', 'd']
+
+print(deque('abcde', 2))  # It Gives de as output.  
+
 
