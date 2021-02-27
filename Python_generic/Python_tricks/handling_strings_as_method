@@ -1,3 +1,11 @@
+
+"""
+Following program will take List commands as string inputs and apply them as method one by one against list and produces final output. 
+This avoids the use of many of if-else conditionals. 
+
+"""
+
+
 def process_comands(in_put, my_list=[]):
     """
     This takes the List Method & method arguments as the input text string and execute it against the my_list.
@@ -37,3 +45,31 @@ reverse
 print
 
 """
+
+
+
+"""
+Following program will check whether a string has any alphaneumeric or alphabetical or digits or lower letter or upper letter character in it.
+
+"""
+s = input()
+my_methods = ['isalnum', 'isalpha', 'isdigit', 'islower', 'isupper']
+for i in my_methods:
+    for char in s:
+        obj = getattr(char, i)
+        if obj():
+            print(obj())
+            break
+    else:
+        print(False)
+"""
+Another Approach is to use any method in Python
+
+"""
+
+s = input()
+my_methods = ['isalnum', 'isalpha', 'isdigit', 'islower', 'isupper']
+for i in my_methods:
+    print(any([getattr(char, i)() for char in s]))
+   
+
