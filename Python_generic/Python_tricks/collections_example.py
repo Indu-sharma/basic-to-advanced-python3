@@ -68,3 +68,41 @@ c = Counter(words).most_common(10)
 print(c)
 
 
+from collections import OrderedDict
+
+"""
+Let's Say you are Given a Input String with all upper letter. Divide the Strings by k  and 
+in each parts , remove the duplicates but maintain the order.
+
+Example - String = AADCBHDDDACD  & k = 3 . Output should be : ADC BHD DAC
+
+"""
+string = 'AADCBHDDDACD'
+n = len(string)
+k = 4
+for i in range(0, n, k):
+    part_string = string[i:i+k]
+    # Order dictionary is not needed here if you are using Py-3.6+ 
+    res = list(OrderedDict.fromkeys(string[i:i+k])) 
+    print(''.join(res))
+
+"""
+Default Dictionary assigns the default value to keys which doesn't exist. 
+In following example, 1 not  is in dict x for the first time but it doesnt throw key error. Instead pass the default 100. 
+"""
+a = [1, 2, 2, 1, 1, 0]
+x = defaultdict(lambda: 100)
+for i in a:
+    x[i] = x[i] + 1
+print(dict(x))
+
+"""
+Default Dictionary assigns the default List to keys which doesn't exist. 
+In following example, 1 not  is in dict x for the first time but it doesnt throw key error. Instead pass the default [] list and keep appending. 
+"""
+a = [1, 2, 2, 1, 1, 0]
+x = defaultdict(list)
+for i in a:
+    x[i].append(i)
+print(dict(x))
+
