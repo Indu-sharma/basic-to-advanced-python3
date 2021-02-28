@@ -28,6 +28,27 @@ random.shuffle(my_cards)
 
 for i in my_cards:
     print(tuple(i))
+    
+    
+    
+"""
+Another Use case of NamedTuple when the Fields input are not fixed.
+
+5
+MARKS      CLASS      NAME       ID        
+92         2          Calum      1         
+82         5          Scott      2         
+94         2          Jason      3         
+55         8          Glenn      4         
+82         2          Fergus     5
+"""
+import re
+from collections import namedtuple
+n = int(input())
+data = [re.split('\s+',input()) for i in range(n + 1)]
+Test = namedtuple('data', data[0])
+print(f'{sum([int(Test(*i).MARKS) for i in data[1:]])/n :.2f}')
+
 
     
 """
