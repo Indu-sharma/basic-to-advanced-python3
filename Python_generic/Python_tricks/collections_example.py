@@ -134,6 +134,7 @@ DeQue has popleft and appendleft methods.
 DeQue works like Linux Tail command by Truncating the iterable given to Deque with the use of maxlen argument.
 
 """
+
 d = deque('abcde', 5)
 d.appendleft(1)
 print(list(d))  # [1, 'a', 'b', 'c', 'd']
