@@ -1,5 +1,6 @@
 # Method 1 :: Using Decorators
 
+
 def mysingleTon(MyClass):
     instances = {}
 
@@ -9,6 +10,7 @@ def mysingleTon(MyClass):
         return instances[MyClass]
 
     return mysingleTon
+
 
 @mysingleTon
 class SingleTon(object):
@@ -37,6 +39,7 @@ print(myobj1.get_list())
 class SingleTon1(object):
     """SingleTon With Class Method"""
     _instances = None
+    
 
     def __init__(self):
         self.mylist = []
