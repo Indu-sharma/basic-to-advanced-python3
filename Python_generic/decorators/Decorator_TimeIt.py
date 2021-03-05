@@ -1,7 +1,6 @@
 import time
 import logging
 
-
 def time_it(func):
     """
     Simple Decorator for generic Run Time Logger across all the functions.
@@ -33,5 +32,5 @@ def _square(nums):
     return mylist
 
 
-nums = xrange(1, 20000)
+nums = xrange(1, 200000)
 print(len(_cube(nums)))
