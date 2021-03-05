@@ -1,6 +1,7 @@
 import pytest
 import elasticsearch as ES
 
+
 @pytest.fixture(scope="module")
 def myconn(es="192.168.1.1:9200"):
     my_es = ES(es)
