@@ -56,6 +56,7 @@ def initi():
     obj = Transform()
     return obj
 
+
 @pytest.mark.parametrize("in_put,out_put", [
     ('factorial;5',120),
     ('factorial;[1,2,3]',[1,2,6]),
@@ -68,6 +69,7 @@ def initi():
     ('square;[1,2,3]',[1,4,9]),
     ("square;{'a':1,'b':2,'c':3}",{'a': 1,'b': 4,'c': 9})
 ])
+
 def test_operations(initi,in_put,out_put):
     in_put1 = in_put.split(';')[0]
     in_put2 = in_put.split(';')[1]
