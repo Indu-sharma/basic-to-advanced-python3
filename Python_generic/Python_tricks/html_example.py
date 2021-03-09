@@ -14,7 +14,14 @@ class MyHTMLParser(HTMLParser):
             print(f'-> {atr[0]} > {atr[1]}')
         
     def handle_comment(self, data):
-        pass
+        if '\n' in data:
+            print(">>> Multi-line Comment")
+            print(data)
+        else:
+            print(f">>> Single-line Comment\n{data}")
+    def handle_data(self, data):
+        if data.strip():
+            print(f">>> Data\n{data}")
 
 if __name__ == '__main__':
     n = int(input())
