@@ -4,7 +4,7 @@ Matching Postal Codes:
     2.Alternating digit shouldn't be repeated - more than 1 occurrence .
 """
 regex_integer_in_range = r"[1-9]\d{5}$"  
-regex_alternating_repetitive_digit_pair = r"(\d)(?=(\d)\1)"  
+regex_alternating_repetitive_digit_pair = r"(\d)(?=(\d)\1)"  #Look Behind 
 import re
 
 P = input()
