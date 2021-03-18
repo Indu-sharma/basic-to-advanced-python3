@@ -43,8 +43,7 @@ class DublyLinkedList:
             i = i.next
 
     def __str__(self):
-        self.display()
-        return str(self.my_list)
+        return ','.join([str(i) for i in self])
 
 
 if __name__ == '__main__':
