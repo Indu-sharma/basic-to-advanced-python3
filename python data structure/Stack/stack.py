@@ -4,7 +4,8 @@ Stack Implementation Using List.
 
 class Stack:
 
-    def __init__(self):
+    def __init__(self, maxSize):
+        self.maxSize = maxSize
         self.list = []
 
     def isEmpty(self):
@@ -14,17 +15,26 @@ class Stack:
         else:
             return False
 
+    def isFull(self):
+        if len(self.list) == self.maxSize:
+            return True
+        return False
+
     def push(self, value):
-        self.list.append(value)
+        if not self.isFull():
+            self.list.append(value)
+        else:
+            raise Exception('Stack OverFlow')
 
     def pop(self):
         if self.isEmpty():
             raise Exception('Stack Underflow')
-        return self.list.pop()
+        else:
+            return self.list.pop()
 
     def peek(self):
         if self.isEmpty():
-            return 'Stack is Empty'
+            raise Exception('Stack is Empty')
         return self.list[-1]
 
     def __str__(self):
@@ -32,7 +42,7 @@ class Stack:
 
 
 if __name__ == '__main__':
-    Obj = Stack()
+    Obj = Stack(5)
     Obj.push(110)
     Obj.push(20)
     Obj.push(30)
@@ -40,6 +50,7 @@ if __name__ == '__main__':
     Obj.push(9)
     print(f'Initial Stack is :\n{Obj}')
     print(f'Top of the Stack is : {Obj.peek()}')
+    Obj.push(90)
     Obj.pop()
     Obj.pop()
     Obj.pop()
