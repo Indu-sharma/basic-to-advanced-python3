@@ -4,7 +4,7 @@ class Node:
         self.next = None
 
 
-class DublyLinkedList:
+class CirclularLinkedList:
     def __init__(self):
         self.head = None
         self.tail = None
@@ -35,11 +35,11 @@ class DublyLinkedList:
 
 
 if __name__ == '__main__':
-    doubly = DublyLinkedList()
-    # Insert Values to the LinkedList at the beginning.
-    doubly.insert_start(10)
-    doubly.insert_start(20)
-    doubly.insert_start(30)
+    circular = CirclularLinkedList()
+    # Insert Values to the CirclularLinkedList at the beginning.
+    circular.insert_start(10)
+    circular.insert_start(20)
+    circular.insert_start(30)
     print('Linkedlist after inserting 10,20,30 at the beginning of Circular LinkedList')
-    print(list(doubly))
+    print(list(circular))
 
