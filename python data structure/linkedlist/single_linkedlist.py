@@ -40,7 +40,7 @@ class SingleLinkedList:
             i = i.next
 
     def __str__(self):
-        return ','.join([str(i) for i in self])
+        return '->'.join([str(i) for i in self])
 
 
 if __name__ == '__main__':
