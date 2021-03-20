@@ -4,17 +4,38 @@ class Node:
         self.next = None
 
 
-class CirclularLinkedList:
+class CircularLinkedList:
     def __init__(self):
         self.head = None
         self.tail = None
         self.my_list = []
 
-    def insert_start(self, value):
+    def createCll(self, value):
         new_node = Node(value)
-        new_node.next = self.head
+        new_node.next = new_node
         self.head = new_node
         self.tail = new_node
+
+    def insert_start(self, value):
+        if not self.head:
+            self.createCll(value)
+        else:
+            new_node = Node(value)
+            new_node.next = self.head
+            self.head = new_node
+            self.tail.next = self.head
+
+    def insert_end(self, value):
+        if not self.head:
+            self.createCll(value)
+        else:
+            i = self.head
+            while i.next != self.head:
+                i = i.next
+            new_node = Node(value)
+            i.next = new_node
+            new_node.next = self.head
+            self.tail = new_node
 
     def __iter__(self):
         """
@@ -35,11 +56,13 @@ class CirclularLinkedList:
 
 
 if __name__ == '__main__':
-    circular = CirclularLinkedList()
-    # Insert Values to the CirclularLinkedList at the beginning.
+    circular = CircularLinkedList()
+    # Insert Values to the CircularLinkedList at the beginning.
+    circular.createCll(100)
     circular.insert_start(10)
     circular.insert_start(20)
     circular.insert_start(30)
-    print('Linkedlist after inserting 10,20,30 at the beginning of Circular LinkedList')
+    circular.insert_end(1000)
+    circular.insert_end(2000)
+    circular.insert_end(3000)
     print(list(circular))
-
