@@ -25,6 +25,30 @@ class CircularLinkedList:
             self.head = new_node
             self.tail.next = self.head
 
+    def delete_start(self):
+
+        if not self.head:
+            pass
+        else:
+            to_del = self.head
+            i = self.head.next
+            self.tail.next = i
+            self.head = i
+            print(f'First element of Circular LL - {to_del.value} is deleted.')
+
+    def delete_end(self):
+
+        if not self.head:
+            pass
+        else:
+            i = self.head
+            while i.next != self.tail:
+                i = i.next
+            to_del = i.next
+            i.next = self.head
+            self.tail = i
+            print(f'Last element of Circular LL - {to_del.value} is deleted.')
+
     def insert_end(self, value):
         if not self.head:
             self.createCll(value)
@@ -48,12 +72,6 @@ class CircularLinkedList:
                 break
             i = i.next
 
-    def display(self):
-        i = self.head
-        while i is not self.head:
-            self.my_list.append(i.value)
-            i = i.next
-
 
 if __name__ == '__main__':
     circular = CircularLinkedList()
@@ -65,4 +83,8 @@ if __name__ == '__main__':
     circular.insert_end(1000)
     circular.insert_end(2000)
     circular.insert_end(3000)
-    print(list(circular))
+    print('->'.join(map(str,circular)))
+    circular.delete_start()
+    print('->'.join(map(str,circular)))
+    circular.delete_end()
+    print('->'.join(map(str, circular)))
