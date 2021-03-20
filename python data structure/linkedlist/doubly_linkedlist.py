@@ -31,6 +31,15 @@ class DoublyLinkedList:
         else:
             self.createDll(value)
 
+    def delete_start(self):
+
+        if self.head:
+            to_del = self.head
+            i = self.head.next
+            i.prev= None
+            self.head = i
+            print(f'Element {to_del.value} is deleted from start of Doubly LinkedList')
+
     def __iter__(self):
         """
         This makes LinkedList an Iterable; Here we will traverse Backwards.
@@ -49,6 +58,8 @@ if __name__ == '__main__':
     OutPut:
     DoublyLinkedList traversed from backwards:(Queue-like)
     100<->10<->20<->30
+    Element 30 is deleted from start of Doubly LinkedList
+    100<->10<->20
     """
     doubly = DoublyLinkedList()
     doubly.createDll(100)
@@ -57,4 +68,6 @@ if __name__ == '__main__':
     doubly.insert_start(20)
     doubly.insert_start(30)
     print('DoublyLinkedList traversed from backwards:(Queue-like)')
+    print(doubly)
+    doubly.delete_start()
     print(doubly)
