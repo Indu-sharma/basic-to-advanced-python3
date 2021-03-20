@@ -41,10 +41,15 @@ class DoublyLinkedList:
             i = i.prev
 
     def __str__(self):
-        return '->'.join([str(i) for i in self])
+        return '<->'.join([str(i) for i in self])
 
 
 if __name__ == '__main__':
+    """
+    OutPut:
+    DoublyLinkedList traversed from backwards:(Queue-like)
+    100<->10<->20<->30
+    """
     doubly = DoublyLinkedList()
     doubly.createDll(100)
     # Insert Values to the LinkedList at the beginning.
