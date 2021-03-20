@@ -25,6 +25,22 @@ class CircularLinkedList:
             self.head = new_node
             self.tail.next = self.head
 
+    def insert_between(self, value, loc):
+        if not self.head:
+            pass
+        elif loc == 0:
+            self.insert_start(value)
+        else:
+            count = 0
+            i = self.head
+            while count != loc - 1:
+                i = i.next
+                count += 1
+            after_loc_node = i.next
+            new_node = Node(value)
+            i.next = new_node
+            new_node.next = after_loc_node
+
     def delete_start(self):
 
         if not self.head:
@@ -74,6 +90,16 @@ class CircularLinkedList:
 
 
 if __name__ == '__main__':
+    """
+    OutPut ::
+    30->20->10->100->1000->2000->3000
+    First element of Circular LL - 30 is deleted.
+    20->10->100->1000->2000->3000
+    Last element of Circular LL - 3000 is deleted.
+    20->10->100->1000->2000
+    After Inserting element 500 at 3, Circular linkedList is:
+    20->10->100->500->1000->2000
+    """
     circular = CircularLinkedList()
     # Insert Values to the CircularLinkedList at the beginning.
     circular.createCll(100)
@@ -87,4 +113,9 @@ if __name__ == '__main__':
     circular.delete_start()
     print('->'.join(map(str,circular)))
     circular.delete_end()
+    print('->'.join(map(str, circular)))
+    loc = 3
+    value = 500
+    circular.insert_between(value, loc)
+    print(f'After Inserting element {value} at {loc}, Circular linkedList is:')
     print('->'.join(map(str, circular)))
