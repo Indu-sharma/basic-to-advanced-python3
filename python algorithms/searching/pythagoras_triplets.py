@@ -3,7 +3,7 @@ Given an array A of Integers find (i,j,k) such that A[i]^2+A[j]^2=A[k]^2
 Ex -
 A = [1,2,5,3,4,6]
 
-Output : 3,4,5
+Output :[(3,4,5)]
 
 Solutions:
 1. Iterative Solution using Nested loops. Time Complexity : O(N^3).
