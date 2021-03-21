@@ -115,3 +115,23 @@ for i in range(len(my_list)):
     freq = my_list[i] // len(my_list)
     if freq > 1:
         print(f'Duplicate Elements At Index: { i } exists:{ freq } times')
+
+"""
+Output::
+
+*******Solution - 1*********
+Duplicate Elements :
+5
+**********Solution - 2**********
+5
+********Solution - 3**********
+5
+*******Solution - 4********
+5 is repeated 2 times
+********Solution - 5**********
+5
+********Solution - 6*********
+5
+********Solution - 7********
+Duplicate Elements At Index: 5 exists:2 times
+"""
