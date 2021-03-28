@@ -17,7 +17,7 @@ in dictionary and return from dictionary if same is encountered in subsequent ca
 
 # Check if given string is palindrome 
 
-def is_pal(s1):
+def isPal(s1):
     if s1 == s1[::-1]:
         return True
     else:
@@ -41,7 +41,7 @@ def find_pal(s, i=0, j=0):
     Check if a substring is palindrome or not. If palindrome store its length in memo dict  and return length.
 
     """
-    if is_pal(s):
+    if isPal(s):
         memo[s] = len(s)
         return memo[s]
     else:
