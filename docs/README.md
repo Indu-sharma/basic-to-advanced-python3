@@ -6,7 +6,7 @@ All the code written here are simple, clean and follows Pep-8 standard.
 ## How to Progress Learning
 
 You need to learn in the following sequence:
-* [python language](python_language)
+* [python language](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_language)
 * [data structure](data_structure)
 * [algorithms](python_algorithms)
 * [pytest](pytest)
