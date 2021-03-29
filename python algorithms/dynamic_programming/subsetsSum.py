@@ -20,33 +20,54 @@ i. You may get the sum total with including the current element
 ii. You may get the sum total without including the current element.
 Summing i & ii will give the number of subsets that sum to k which would include/exclude current element.
 
+Time Complexity of above problem is : O(2^n). We can then use memoization technique to reduce the complexity
+to O(n*k) 
+
 """
+
+memo = {}
+c = 0
 
 
 def subSetSum(inputSet, k, i=0) -> int:
+    global c
+    c += 1
     """
     @type i: int
     @type k: int
     @type inputSet: Set
     """
 
+    key = str(k) + ':' + str(i)
+
+    if key in memo:
+        return memo[key]
+
     if k == 0:
+        memo[key] = 1
         return 1
     elif i > len(inputSet) - 1:
+        memo[key] = 0
         return 0
     elif k < 0:
+        memo[key] = 0
         return 0
     elif inputSet[i] > k:
-        return subSetSum(inputSet, k, i + 1)
+        memo[key] = subSetSum(inputSet, k, i + 1)
+        return memo[key]
     else:
-        return subSetSum(inputSet, k, i + 1) + subSetSum(inputSet, k - inputSet[i], i + 1)
+        memo[key] = subSetSum(inputSet, k, i + 1) + subSetSum(inputSet, k - inputSet[i], i + 1)
+        return memo[key]
 
 
 if __name__ == '__main__':
-    inputSet = {2, 4, 8, 6, 10}
-    k = 10
+    inputSet = [7, 3, 2, 5, 8]
+    k = 14
     print(subSetSum(list(inputSet), k))
+    print(c)
     """
-    Output : 3 
+    Output : 3 , 42
+    There are 3 subsets whose sum is k.
+    And 42 is the Num of Recursive calls for testing purpose
     Subsets : {2,4,6} {4,6} {10} 
     """
