@@ -6,11 +6,11 @@ All the code written here are simple, clean and follows Pep-8 standard.
 ## How to Progress Learning
 
 You need to learn in the following sequence:
-* [python language](python language)
-* [python data structure](python data structure)
-* [python algorithms](python algorithms)
-* [pytest framework](pytest framework)
-* [python bigdata](python bigdata)
+* [python language](#python language)
+* [python data structure](#python data structure)
+* [python algorithms](#python algorithms)
+* [pytest framework](#pytest framework)
+* [python bigdata](#python bigdata)
 
 
 
