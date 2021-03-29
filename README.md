@@ -19,6 +19,7 @@ You need to learn in the following sequence:
 I recommend to install following software in your system:
 * python 3.7.x or Higher 
 * pip3 to install python 3 software modules and packages. 
+* Pycharm - Community Version (if you want free) 
 
 
 ### Installing
@@ -35,12 +36,13 @@ TBD
 
 
 
-### And coding style tests
+### And coding style 
 
 All the code checked-in should follow PEP-8 standards. 
 
 ```
-TBD
+1. If you are using Pycharm, turn the PEP-8 syntax checks and correct using format (yellow bulb appears by default) before commiting the code. 
+2. Try to write the code in more Pythonic way. Ex- you may use list comrehension against for loop if possible or Lambda functions. 
 ```
 
 ## Deployment
