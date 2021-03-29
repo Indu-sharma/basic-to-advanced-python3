@@ -1,12 +1,13 @@
-# Python-3 Learning with Indu 
+# Basic to Advanced Python Learning  with Indu 
 
-This project aims at providing the solutions to the data structure and algorithm problems using cPython programming language. We cover python in-built data structures , data structure and algorithms extensively in this repository. 
+This project primarily aims at providing the solutions to the data structure and algorithm problems using cPython programming language. We cover python in-built data structures , data structure and algorithms extensively in this repository. Also, we are going to provide the pythonic solutions to common software design problems. .
 All the code written here are simple,concise, clean and follows Pep-8 standard.
 
 ## How to Progress Learning
 
-You need to learn in the following sequence:
+I recommend you to learn in the following sequence:
 * [python language](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_language)
+* [python_design_patterns](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_design_patterns)
 * [data structure](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_data_structure)
 * [algorithms](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_algorithms)
 * [pytest](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/pytest)
