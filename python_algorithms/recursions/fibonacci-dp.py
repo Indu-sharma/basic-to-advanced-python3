@@ -1,3 +1,6 @@
+"""
+This program calculate the Nth Fibonaci number.
+"""
 import datetime
 
 
