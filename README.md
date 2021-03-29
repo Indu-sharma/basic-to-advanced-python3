@@ -25,7 +25,7 @@ I recommend to install following software in your system:
 
 
 ```
-git@github.com:Indu-sharma/python-data_structure-algorithms.git
+git clone git@github.com:Indu-sharma/python-data_structure-algorithms.git
 ```
 
 
