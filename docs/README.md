@@ -60,8 +60,8 @@ TBD
 
 ## Authors
 
-* **Indu Sharma** - *Initial work* - [python-data_structure-algorithms](https://github.com/Indu-sharma/python-data_structure-algorithms)
-* See also the list of [contributors](https://github.com/Indu-sharma/python-data_structure-algorithms/graphs/contributors) who participated in this project.
+* **Indu Sharma** - *Initial work* - [basic-to-advanced-python3](https://github.com/Indu-sharma/basic-to-advanced-python3)
+* See also the list of [contributors](https://github.com/Indu-sharma/basic-to-advanced-python3/graphs/contributors) who participated in this project.
 
 ## About Me
 * More than 12 Years of experience as Quality Engineering and DevOps expert in various IT industry. 
