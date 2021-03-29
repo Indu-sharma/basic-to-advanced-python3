@@ -26,6 +26,7 @@ I recommend to install following software in your system:
 
 
 ```
+pip3 install -r docs/requirements.txt
 git clone git@github.com:Indu-sharma/python-data_structure-algorithms.git
 ```
 
