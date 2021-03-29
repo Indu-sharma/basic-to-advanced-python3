@@ -10,8 +10,9 @@ def time_complexity_in(e, my_list):
         a = True
 
 
-times = []
+
 my_list1 = range(1, 90001, 100)
+times = []
 for x in my_list1:
     my_list = set(range(0, x))
     start_time = time.time()
