@@ -66,7 +66,7 @@ TBD
 ## About Me
 * More that 12 Years of experience as Quality Engineering and DevOps expert in various IT industry. 
 * A Technical Leader, with interest in Python, Shell scripting, Bigdata analytics, Security, DevOps and Virtualisation/Cloud technologies.
-* Email : [indu.sharma.acharya@gmail.com](indu.sharma.acharya@gmail.com)
+* Email : [indu.sharma.acharya@gmail.com]
 * LinkedIn : [Connect with me](https://www.linkedin.com/in/indu-sharma-22842427/)
 * For Free Weekend Online Live class on Python 3 , feel free to shoot up an email.
 
