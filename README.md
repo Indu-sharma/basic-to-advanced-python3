@@ -7,10 +7,10 @@ All the code written here are simple, clean and follows Pep-8 standard.
 
 You need to learn in the following sequence:
 * [python language](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_language)
-* [data structure](data_structure)
-* [algorithms](python_algorithms)
-* [pytest](pytest)
-* [python bigdata](python_bigdata)
+* [data structure](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/data_structure)
+* [algorithms](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_algorithms)
+* [pytest](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/pytest)
+* [python bigdata](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_bigdata)
 
 
 
