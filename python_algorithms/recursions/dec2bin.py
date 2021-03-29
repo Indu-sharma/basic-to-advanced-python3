@@ -1,3 +1,6 @@
+"""
+This program converts decimal to Binary using the recursion.
+"""
 def dec2bin(n):
     if n == 0:
         return n
