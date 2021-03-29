@@ -41,8 +41,10 @@ TBD
 All the code checked-in should follow PEP-8 standards. 
 
 ```
-1. If you are using Pycharm, turn the PEP-8 syntax checks and correct using format (yellow bulb appears by default) before commiting the code. 
-2. Try to write the code in more Pythonic way. Ex- you may use list comrehension against for loop if possible or Lambda functions. 
+1. If you are using Pycharm, turn the PEP-8 syntax checks and correct using format
+   (yellow bulb appears by default) before commiting the code. 
+2. Try to write the code in more Pythonic way. 
+   Ex- you may use list comrehension against for loop if possible or Lambda functions. 
 ```
 
 ## Deployment
