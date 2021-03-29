@@ -55,8 +55,7 @@ TBD
 ## Authors
 
 * **Indu Sharma** - *Initial work* - [python-data_structure-algorithms](https://github.com/Indu-sharma/python-data_structure-algorithms)
-
-See also the list of [contributors](https://github.com/Indu-sharma/python-data_structure-algorithms/graphs/contributors) who participated in this project.
+* See also the list of [contributors](https://github.com/Indu-sharma/python-data_structure-algorithms/graphs/contributors) who participated in this project.
 
 ## License
 
