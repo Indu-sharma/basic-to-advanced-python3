@@ -3,6 +3,13 @@
 This project primarily aims at providing the solutions to the data structure and algorithm problems using cPython programming language. We cover python in-built data structures , data structure and algorithms extensively in this repository. Also, we are going to provide the pythonic solutions to common software design problems. .
 All the code written here are simple,concise, clean and follows Pep-8 standard.
 
+# About Python ?
+
+* Python language is an interpreted language. Python program runs directly from the source code. It converts the source code that is written by the programmer into an intermediate language, which is again translated into machine language that has to be executed.
+*  Python is a programming language with objects, modules, threads, exceptions and automatic memory management. The benefits of pythons are that it is simple and easy, portable, extensible, build-in data structure and it is an open source. Python comprises of a huge standard library for most Internet platforms like Email, HTML, etc. Python does not require explicit memory management as the interpreter itself allocates the memory to new variables and free them automatically Provide easy readability due to use of square brackets Easy-to-learn for beginners Having the built-in data types saves programming time and effort from declaring variables.
+* In Python, every name introduced has a place where it lives and can be hooked for. This is known as namespace. It is like a box where a variable name is mapped to the object placed. Whenever the variable is searched out, this box will be searched, to get corresponding object.
+* Python memory is managed by Python private heap space. All Python objects and data structures are located in a private heap. The programmer does not have an access to this private heap and interpreter takes care of this Python private heap. The allocation of Python heap space for Python objects is done by Python memory manager. The core API gives access to some tools for the programmer to code. Python also have an inbuilt garbage collector, which recycles objects.
+
 ## How to Progress Learning
 
 I recommend you to learn in the following sequence:
