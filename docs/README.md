@@ -10,6 +10,8 @@ All the code written here are simple,concise, clean and follows Pep-8 standard.
 * In Python, every name introduced has a place where it lives and can be hooked for. This is known as namespace. It is like a box where a variable name is mapped to the object placed. Whenever the variable is searched out, this box will be searched, to get corresponding object.
 *  Python does not require explicit memory management as the interpreter itself allocates the memory to new variables and free them automatically Provide easy readability due to use of square brackets Easy-to-learn for beginners Having the built-in data types saves programming time and effort from declaring variables.
 * Python memory is managed by Python private heap space. All Python objects and data structures are located in a private heap. The programmer does not have an access to this private heap and interpreter takes care of this Python private heap. The allocation of Python heap space for Python objects is done by Python memory manager. The core API gives access to some tools for the programmer to code. Python also have an inbuilt garbage collector, which recycles objects.
+* Note: Few of the above points are referenced from https://www.linkedin.com/in/drangshu/. 
+
 
 ## How to Progress Learning
 
