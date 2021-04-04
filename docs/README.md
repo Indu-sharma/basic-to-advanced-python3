@@ -76,7 +76,7 @@ TBD
 * A Technical Leader, with interest in Python, Shell scripting, Bigdata analytics, Security, DevOps and Virtualisation/Cloud technologies.
 * Email : [indu.sharma.acharya@gmail.com]
 * LinkedIn : [Connect with me](https://www.linkedin.com/in/indu-sharma-22842427/)
-* Every Sunday(12PM to 1PM) conduct classes to students or professionals whose job is impacted with Covid-19 , please join to the group: https://t.me/Indu_sharma
+* Every Sunday(12PM to 1PM) conduct classes to students or professionals whose job is impacted with Covid-19 , please join to the telegram group: https://t.me/Indu_sharma
 
 ## License
 
