@@ -23,6 +23,9 @@ I recommend you to learn in the following sequence:
 * [pytest](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/pytest)
 * [python for bigdata](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_bigdata)
 
+## Live Sessions 
+* [livesession_first_series](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/livesession_first_series)
+
 
 
 
