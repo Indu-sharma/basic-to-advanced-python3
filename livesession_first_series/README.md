@@ -18,5 +18,5 @@
         * List Basics: Properties , Methods & Slicing  
         * Solve a typical list problem.  
     * [Code Snippets](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/livesession_first_series/session3)
-    * [recording](https://techkokaldeep.com/indus-harma/215/)
+    * [Recording](https://techkokaldeep.com/indus-harma/215/)
    
