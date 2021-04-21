@@ -29,3 +29,6 @@ Example: 1)  python3 sync_qa_metric.py -r  10  ; this will sync User Story based
 
 Above script updated said metrics from  TestRail tests ex - https://YOUR COMPANY.testrail.io/index.php?/suites/view/11&group_by=cases:section_id&group_id=339&group_order=asc
 to Jira User Story : https://YOUR COMPANY.atlassian.net/browse/JIRA_ID
+
+#### Disclaimer 
+This script doesn't gurantee to work in all the testRail/Jira setups. In case of failures, do debugging around the constraints provided above. 
