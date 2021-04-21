@@ -16,12 +16,12 @@ All the code written here are simple,concise, clean and follows Pep-8 standard.
 ## How to Progress Learning
 
 I recommend you to learn in the following sequence:
-* [python language](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_language)
-* [design patterns](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_design_patterns)
-* [data structure](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_data_structure)
-* [algorithms](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_algorithms)
-* [pytest](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/pytest)
-* [python for bigdata](https://github.com/Indu-sharma/python-data_structure-algorithms/tree/master/python_bigdata)
+* [python language](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/python_language)
+* [design patterns](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/python_design_patterns)
+* [data structure](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/python_data_structure)
+* [algorithms](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/python_algorithms)
+* [pytest](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/pytest)
+* [python generic utilities](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/generic_utilities)
 
 ## Live Sessions 
 * [livesession_first_series](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/livesession_first_series)
