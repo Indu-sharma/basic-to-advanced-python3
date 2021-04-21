@@ -1,4 +1,4 @@
-# Resources  
+#Resources  
 1. session-1  
     * Objectives:
         * Namespace, basic scalar python data types
