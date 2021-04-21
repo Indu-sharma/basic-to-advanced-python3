@@ -22,10 +22,10 @@ For sample dashboard, please check SampleOutput.png
 ### Execute 
 1. Review configs.yml and update the Jira/TestRail APIs and Keys. 
 2. pip3 install -r requirements.txt
-3. python3 sync_qa_metrics.py -r TEST_RUN  
+3. python3 sync_qa_metrics.py -r TEST_RUN  (provide the Test Run ID)
 
-Example: 1)  python3 sync_qa_metric.py -r  10  ; this will sync US based on test runs. You can pass space separated list of test runs to update in bulk. 
+Example: 1)  python3 sync_qa_metric.py -r  10  ; this will sync User Story based on test runs. You can pass space separated list of test runs to update in bulk. 
          2)  python3 sync_qa_metric.py -d 7  ; this will sync the US based on the days test runs created.
 
-Above synced up said metric testRail cases: https://<abc company>.testrail.io/index.php?/suites/view/11&group_by=cases:section_id&group_id=339&group_order=asc
-With  Jira User Story : https://<abc company>.atlassian.net/browse/ZDP-4700
+Above script updated said metrics from  TestRail tests ex - https://YOUR COMPANY.testrail.io/index.php?/suites/view/11&group_by=cases:section_id&group_id=339&group_order=asc
+to Jira User Story : https://YOUR COMPANY.atlassian.net/browse/JIRA_ID
