@@ -3,8 +3,8 @@ To update following metrics in a Jira User Story:
 * TestRail total test cases
 * Tests cases to automate ; This means total test cases are in backlog for automation. 
 * Test cases automated 
-* First Pass Rate % 
-* Latest Pass Rate %   
+* First Pass Rate %  ; This means the Quality of first build where test cases were executed. 
+* Latest Pass Rate %  ; This means the Quality of latest build where test cases were executed. 
 
 So that dashboards can be created for above metrics in Jira Dashboards which will provide the visibility on Build Quality & Sprint automation BackLog. 
 Based on the trends of above metrics, engineering can fine tune the proccess for producing better quality builds.   
