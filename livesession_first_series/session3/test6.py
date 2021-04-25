@@ -44,7 +44,7 @@ print(f'solution1 - {my_list}')
 out_list = []
 for e in my_list:
     if isinstance(e, list):
-        out_list.extend(e)
+        out_list.extend(e[::-1])
     else:
         out_list.append(e)
 print(f'solution2 {out_list}')
