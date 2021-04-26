@@ -1,0 +1,5 @@
+setuptools==18.5
+pytest==4.6.11
+elasticsearch==7.0.2
+requests==2.22.0
+pytest-html-reporter
