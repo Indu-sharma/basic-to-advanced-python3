@@ -5,14 +5,14 @@
         * Understanding methods with Dir & Help  keywords.
         * Python Modules.
     * [Code Snippets](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/livesession_first_series/session1)
-    * [Recording]
+    * [Recording](https://techkokaldeep.com/indus-harma/246/)
     
 2. Session-2  
     * Objectives:
         * Python Packages
         * String Methods - Concat, strip, replace, split , format etc. 
     * [Code Snippets](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/livesession_first_series/session2)
-    * [Recording]
+    * [Recording](https://techkokaldeep.com/indus-harma/252/)
 
 3. Session-3  
     * Objectives:
@@ -31,4 +31,4 @@
      * List Comprehensions
      * Solve a Problem using List Comprehension.
    * [Code Snippets](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/livesession_first_series/session4)
-   * [Recording]
+   * [Recording](https://techkokaldeep.com/indus-harma/254/)
