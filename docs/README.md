@@ -20,7 +20,7 @@ I recommend you to learn in the following sequence:
 * [design patterns](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/python_design_patterns)
 * [data structure](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/python_data_structure)
 * [algorithms](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/python_algorithms)
-* [pytest](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/pytest)
+* [pytest sample project](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/project_pytest)
 * [python generic utilities](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/generic_utilities)
 
 ## Live Sessions 
