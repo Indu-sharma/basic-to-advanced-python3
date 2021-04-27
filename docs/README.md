@@ -17,10 +17,10 @@ All the code written here are simple,concise, clean and follows Pep-8 standard.
 
 I recommend you to learn in the following sequence:
 * [python language](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/python_language)
-* [design patterns](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/python_design_patterns)
 * [data structure](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/python_data_structure)
 * [algorithms](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/python_algorithms)
 * [pytest sample project](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/project_pytest)
+* [design patterns](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/python_design_patterns)
 * [python generic utilities](https://github.com/Indu-sharma/basic-to-advanced-python3/tree/master/generic_utilities)
 
 ## Live Sessions 
