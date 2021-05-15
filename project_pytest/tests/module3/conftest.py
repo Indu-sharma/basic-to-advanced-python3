@@ -1,5 +1,6 @@
 import pytest
-
+import sys,os
+sys.path.append(os.getcwd())
 from src.linked_list import *
 
 """ 

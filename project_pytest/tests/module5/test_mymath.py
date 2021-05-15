@@ -1,4 +1,6 @@
 import pytest
+import sys,os
+sys.path.append(os.getcwd())
 
 from src.mymath import *
 
@@ -6,7 +8,7 @@ from src.mymath import *
 @pytest.fixture(scope='function')
 def initi():
     obj = Transform()
-    return obj
+    yield obj
 
 
 @pytest.mark.parametrize("in_put,out_put", [

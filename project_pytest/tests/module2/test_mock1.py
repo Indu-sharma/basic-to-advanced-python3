@@ -2,6 +2,9 @@ import json
 
 import pytest
 
+import sys,os
+sys.path.append(os.getcwd())
+
 """
 This test uses MonkeyPatching to Test the src users.py functions,
 where we mock get_user_followers with substitute_func so that there is no 

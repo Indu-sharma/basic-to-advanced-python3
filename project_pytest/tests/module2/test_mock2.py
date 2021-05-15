@@ -1,6 +1,9 @@
 import json
 
 import pytest
+import sys,os
+sys.path.append(os.getcwd())
+
 
 """
 This test uses MonkeyPatching to Test the src users.py functions,
