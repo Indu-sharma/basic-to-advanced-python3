@@ -106,7 +106,7 @@ print(d)
 
 
 
-# Function Overloading :: No direct support but we can achieve with singledismatch. 
+# Function/method Overloading :: No direct support but we can achieve with multipledispatch module. 
 
 @dispatch(int,float)
 def multiply(a,b):
